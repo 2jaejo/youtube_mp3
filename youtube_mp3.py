@@ -85,9 +85,10 @@ class YouTubeDownloader(tk.Tk):
                 
         # yt-dlp 옵션 설정
         ffmpeg_dir = self.resource_path("ffmpeg")
+        print(ffmpeg_dir)
         
         ydl_opts = {
-            # 'ffmpeg_location': 'H:\workspace\python\joker\youtubeToMp3\ffmpeg',
+            # 'ffmpeg_location': r'H:\workspace\python\joker\youtubeToMp3\ffmpeg',
             'ffmpeg_location': ffmpeg_dir,
             'format': 'bestaudio/best',  # 최상의 오디오 품질 선택
             'extractaudio': True,         # 오디오만 추출
